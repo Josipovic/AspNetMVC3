@@ -1,0 +1,51 @@
+﻿@model ASPNet3Vjezba2.Models.KontaktPodaci
+@{
+    ViewBag.Title = "Kontakt";
+}
+
+<h2>Kontakt</h2>
+
+@using (Html.BeginForm())
+{
+
+    @Html.Label("Ime:")
+    <br />
+    @Html.TextBoxFor(m=>m.Ime)
+    <br />
+    @Html.Label("Prezime:")
+    <br />
+    @Html.TextBoxFor(m=>m.Prezime)
+    <br />
+
+    @Html.Label("Poštanski broj")
+    <br />
+    @Html.TextBoxFor(m=>m.PostanskiBroj)
+    <br />
+
+    @Html.Label("Mjesto")
+    <br />
+    @Html.TextBoxFor(m=>m.Mjesto)
+    <br />
+
+    @Html.Label("Ulica")
+    <br />
+    @Html.TextBoxFor(m=>m.Ulica)
+    <br />
+
+    @Html.Label("Kućni broj")
+    <br />
+    @Html.TextBoxFor(m=>m.KucniBroj)
+    <br />
+
+    @Html.Label("Telefon")
+    <br />
+    @Html.TextBoxFor(m=>m.Telefon)
+    <br />
+
+    @Html.Label("Email")
+    <br />
+    @Html.TextBoxFor(m=>m.Email)
+
+    <br />
+    <input type="submit" value="Naruči" />
+}

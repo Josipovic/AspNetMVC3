@@ -1,0 +1,16 @@
+﻿@model  List<ASPNet3Vjezba2.Models.FormaPodaci>
+
+@{
+    ViewBag.Title = "Prikazi";
+}
+
+<h2>Prikazi</h2>
+
+@foreach (var m in Model) {
+
+<h4>@m.Ime</h4>
+    <h4>@m.Prezime</h4>
+    <h4>@m.Poruka</h4>
+    <br />
+    <br />
+}

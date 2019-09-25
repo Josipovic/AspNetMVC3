@@ -1,0 +1,21 @@
+﻿@model ASPNet3Vjezba2.Models.FormaPodaci
+@{
+    ViewBag.Title = "Forma";
+}
+
+<h2>Forma</h2>
+
+@using (Html.BeginForm()) {
+
+@Html.Label("Ime")
+@Html.TextBoxFor(x=>x.Ime)
+<br />
+@Html.Label("Prezime")
+@Html.TextBoxFor(x=>x.Prezime)
+<br />
+@Html.Label("Poruka")
+@Html.TextBoxFor(x=>x.Poruka)
+<br />
+    
+    <input type="submit" value="OK" />
+}
